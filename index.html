@@ -120,6 +120,18 @@
             color: #cccccc;
         }
 
+        /* Scratch Game Container */
+        .game-container {
+            margin: 50px auto;
+            padding: 20px;
+            width: 650px;
+            background: rgba(0, 255, 255, 0.08);
+            border: 2px solid #00eaff;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+        }
+
         footer {
             margin-top: 40px;
             padding: 20px;
@@ -151,20 +163,21 @@
     <section class="hero" id="home">
         <h1>Welcome to Riya's Cloud Gaming Portal</h1>
         <p>Explore next-gen cloud-hosted gameplay, high-performance online gaming,
-           and innovative interactive experiences curated and developed by Riya.</p>
+           and interactive experiences curated and developed by Riya.</p>
 
-        <a href="game.html">
+        <a href="#games">
             <button class="cta-button">🎮 Play Riya's Cloud Game</button>
         </a>
     </section>
 
-    <!-- FEATURE CARDS -->
+    <!-- GAMES + SCRATCH GAME SECTION -->
     <section id="games">
+
         <div class="card-container">
 
             <div class="card">
                 <h3>Cloud-Hosted Games</h3>
-                <p>Riya develops modern games hosted on platforms like Unity Play, Replit, Scratch, or Firebase.</p>
+                <p>Riya develops modern games hosted on Unity Play, Replit, Scratch, Firebase & more.</p>
             </div>
 
             <div class="card">
@@ -174,7 +187,7 @@
 
             <div class="card">
                 <h3>Stunning UI/UX</h3>
-                <p>Advanced neon-glow theme, animations, transitions & responsive design.</p>
+                <p>Neon glow theme, animations, transitions & responsive design.</p>
             </div>
 
             <div class="card">
@@ -183,6 +196,22 @@
             </div>
 
         </div>
+
+        <!-- SCRATCH GAME -->
+        <div class="game-container">
+            <h2 style="color:#00eaff;">🎮 Play My Scratch Game</h2>
+
+            <iframe 
+                src="https://scratch.mit.edu/projects/1249627329/embed"
+                allowtransparency="true"
+                width="600"
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen>
+            </iframe>
+        </div>
+
     </section>
 
     <!-- FOOTER -->
