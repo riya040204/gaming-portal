@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya's Gaming Portal | Cloud Games</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #000033);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00eaff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #00eaff;
+            text-shadow: 0 0 20px #00eaff;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 15px;
+            width: 70%;
+        }
+
+        .cta-button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            border: 2px solid #00eaff;
+            background: transparent;
+            color: #00eaff;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #00eaff;
+            color: #000;
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 50px;
+        }
+
+        .card {
+            background: rgba(0, 0, 40, 0.5);
+            border: 1px solid #00eaff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            color: #00eaff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cccccc;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background: #000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">RIYA'S GAMING PORTAL</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/riya040204" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <h1>Welcome to Riya's Cloud Gaming Portal</h1>
+        <p>Explore next-gen cloud-hosted gameplay, high-performance online gaming,
+           and innovative interactive experiences curated and developed by Riya.</p>
+
+        <a href="game.html">
+            <button class="cta-button">🎮 Play Riya's Cloud Game</button>
+        </a>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section id="games">
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Cloud-Hosted Games</h3>
+                <p>Riya develops modern games hosted on platforms like Unity Play, Replit, Scratch, or Firebase.</p>
+            </div>
+
+            <div class="card">
+                <h3>High Performance</h3>
+                <p>Fully optimized games for instant play with smooth performance and fast loading.</p>
+            </div>
+
+            <div class="card">
+                <h3>Stunning UI/UX</h3>
+                <p>Advanced neon-glow theme, animations, transitions & responsive design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Open Source</h3>
+                <p>View Riya's code on GitHub and collaborate through her official repository.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="about">
+        <p>Created by <strong>Riya</strong> | Cloud Game Development Project</p>
+    </footer>
+
+</body>
+</html>
